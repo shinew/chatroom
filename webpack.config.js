@@ -10,7 +10,7 @@ module.exports = {
     loaders: [
       {
         test : /\.jsx?/,
-        include : path.resolve('.'),
+        include : path.resolve(),
         loader : 'babel'
       }
     ]
