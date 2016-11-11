@@ -1,8 +1,9 @@
+const path = require('path');
+
 module.exports = {
-  entry : "src/main.js",
-  output : {
-    path : __dirname,
-    filename : "bundle.js",
+  entry: path.resolve('src/assets/js/main.js'),
+  output: {
+    path: path.resolve('public/js'),
+    filename: 'bundle.js',
   },
-  module : {loaders : [ {test : /\.css$/, loader : "style!css"} ]}
 };
